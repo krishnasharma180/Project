@@ -7,6 +7,7 @@
 body{
    background-color: black;
    color: white;
+   font-family:'Roboto';
 }
 /* navigation bar */
 .nav{
@@ -247,6 +248,7 @@ z-index: 1;
 .headings{
    width: 80%;
    height: fit-content;
+   font-family: ' Playfair Display';
    padding: 5px;
    margin-top: 30px;
    display: flex;
