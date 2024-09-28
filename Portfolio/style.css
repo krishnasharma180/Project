@@ -2,12 +2,11 @@
    margin: 0;
    padding: 0;
    box-sizing: border-box;
-   font-family: Arial, Helvetica, sans-serif;
 }
 body{
    background-color: black;
    color: white;
-   font-family:'Roboto';
+   font-family:'Montserrat';
 }
 /* navigation bar */
 .nav{
@@ -248,7 +247,6 @@ z-index: 1;
 .headings{
    width: 80%;
    height: fit-content;
-   font-family: ' Playfair Display';
    padding: 5px;
    margin-top: 30px;
    display: flex;
@@ -372,6 +370,7 @@ animation:animate 2s ease-in-out;
   top: 70px;
   left: 150px;
   font-size: 45px;
+  font-family: ' Playfair Display';
 }
 .circular-bars{
    height: 240px;
