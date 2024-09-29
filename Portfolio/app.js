@@ -10,24 +10,17 @@ const navParts = document.querySelectorAll(".web-info .part");
  window.addEventListener('scroll',()=>{
 value = window.scrollY;
 console.log(value);
-backgroundImage.style.marginTop=value*1.5 + 'px';
- })
-//    part.addEventListener('click',function(){
+backgroundImage.style.marginTop=value*2 + 'px';
+ });
 
-// if (color){
-//    color.classList.remove('belowbrder');
-// }
-// color = part;
-// part.classList.add('belowbrder');
-
-//    });
-// });
+//adding animation to side-menu
 
 menuBar.addEventListener('click',()=>{
    sideMenu.classList.toggle('active');
 });
 
 // Creating smooth scroll effect when clicked on nav items
+
 let anchors =document.querySelectorAll('a[href^="#"]');
 
 anchors.forEach(anchor=>{
@@ -51,6 +44,7 @@ anchors.forEach(anchor=>{
   )
 });
 // applying border effect to skills
+
 const technicalskill = document.querySelector(".progress-bars");
 const professionalskill = document.querySelector(".circular-bars");
 const heading1 = document.querySelector(".technical");
@@ -88,11 +82,10 @@ const activateNav = () => {
 };
 
 window.addEventListener('scroll', activateNav);
-const submitButton = document.querySelector(".submit");
 
 // submitting form
 
-const form = document.querySelector("form")
+const form = document.querySelector("form");
 
 form.addEventListener('submit',(e)=>{
    e.preventDefault();
@@ -116,3 +109,18 @@ form.addEventListener('submit',(e)=>{
       alert('There was a problem with your submission.');
   });
 });
+// download button style
+
+const clickedButton = document.querySelectorAll(".download");
+clickedButton.forEach((button)=>{
+  button.addEventListener('click',()=>{
+  button.classList.add("backgroundcolor");
+  setTimeout(()=>{
+    button.classList.remove("backgroundcolor");
+  },150)
+  
+  })
+})
+
+
+

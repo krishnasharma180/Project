@@ -202,7 +202,7 @@ transform: translateX(100px);
    z-index: 0;
 }
 .image-card{
-   min-height: 350px;
+   height: 350px;
    width: 25vw;
    margin-left: 50px;
    background-image: url("images/myimage.jpg");
@@ -215,7 +215,7 @@ z-index: 1;
    width: 70vw;
    z-index: 1;
    position: relative;
-   padding: 40px;
+   padding: 10px;
 }
 .self-info h1{
    font-size: 50px;
@@ -274,33 +274,33 @@ z-index: 1;
    justify-content: flex-start;
    padding-top: 20px;
    position: relative;
-   padding-left: 10px;
    gap: 30px;
    opacity: 1;
+   padding-left: 5px;
    transition: all 0.5s ease-in;
 }
 .progress-bars .fa-brands{
    position: absolute;
-   top: 28px;
+   top: 25px;
    left:-60px;
    height: 20px;
    font-size: 8px;
 }
 .progress-bars .fa-js{
-top: 120px;
+top: 115px;
 }
 .progress-bars .fa-css3-alt{
-top: 75px;
+top: 70px;
 }
 .progress-bars .react{
-   top: 170px;
+   top: 162px;
 }
 @keyframes animate{
    from{
 width:0px;
    }
    to{
-width: 225px;
+width: 200px;
    }
 }
 @keyframes animate2{
@@ -308,7 +308,7 @@ width: 225px;
 width:0px;
    }
    to{
-width: 200px;
+width: 190px;
    }
 }
 .progress-bar{
@@ -536,7 +536,7 @@ padding: 0px;
     }
     /* contact info */
 .phone-info{
-   height: 70vh;
+   height: 80vh;
    width: 45vw;
   display: flex;
   margin: 0px 30px;
@@ -575,13 +575,14 @@ textarea{
    margin: 20px;
    gap: 20px;
 align-items: center;
+text-align: left;
 justify-content: space-evenly;
 }
 .phone-no{
-   margin-left: -300px;
+   margin-left: -283px;
 }
 .gmail{
-   margin-left:-80px ;
+   margin-left:-77px ;
 }
 .phone-no i,.gmail i,.git i{
    color: red;
@@ -636,6 +637,9 @@ left: 0px;
    font-size: 18px;
    border: none;
  }
+ .backgroundcolor{
+   background-color: rgb(227, 94, 94);
+ }
  /* footer */
  footer{
    background-color:  rgb(0, 0, 0);
@@ -659,17 +663,13 @@ left: 0px;
    .active{   visibility: visible;}
 
    .image{
-      left: 0px;
-      height: 90%;
+      height: 100%;
+      background-position: center;
       width: 100%;
+      right: 0px;
       background-size: cover;
+      position: relative;
    }
-   .Contact{
-  
-      flex-direction: column;
-    height: 175vh;
-
-    }
      .message-box,.phone-info{
       width: 95vw;
       margin-bottom: 30px;
@@ -715,19 +715,26 @@ left: 0px;
 }
 @media(max-width:600px){
    .phone-info .phone-no,.gmail,.git{
-      font-size: 15px;
+      font-size: 13px;
+   }
+   .image-card{
+      height: 250px;
    }
    .phone-no i{
-      margin-left: 80px;
+      margin-left: 110px;
    }
    .gmail i{
-      margin-left:25px ;
+      margin-left:35px ;
    }
    footer p{
       font-size: 12px;
    }
    .progress-bars{
-      margin-left:80px ;
+      margin-left:65px ;
+      width: 250px;
+   }
+   .progress-bar{
+      width: 220px;
    }
 }
 
