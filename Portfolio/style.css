@@ -568,6 +568,8 @@ padding: 0px;
 textarea{
    height: 200px;
    padding: 10px 15px;
+   font-family: 'Roboto','Montserrat';
+   color: rgb(0, 0, 0);
 }
 .phone-no,.gmail,.git{
    display: flex;
