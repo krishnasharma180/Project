@@ -9,7 +9,6 @@ const navParts = document.querySelectorAll(".web-info .part");
 
  window.addEventListener('scroll',()=>{
 value = window.scrollY;
-console.log(value);
 backgroundImage.style.marginTop=value*2 + 'px';
  });
 
@@ -51,7 +50,6 @@ const heading1 = document.querySelector(".technical");
 const heading2 = document.querySelector(".professional");
 
 heading1.addEventListener('click',()=>{
-   console.log("rhfbhrfhf");
    heading2.classList.remove('belowborder');
    heading1.classList.add('belowborder')
    technicalskill.style.display="flex";
@@ -60,7 +58,6 @@ heading1.addEventListener('click',()=>{
 heading2.addEventListener('click',()=>{
    heading1.classList.remove('belowborder');
    heading2.classList.add('belowborder');
-   console.log("rhfbhrfhf");
    technicalskill.style.display="none";
    professionalskill.style.display="flex";
 });
