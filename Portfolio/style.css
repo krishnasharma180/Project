@@ -572,17 +572,11 @@ textarea{
 .phone-no,.gmail,.git{
    display: flex;
    font-size: 20px;
-   margin: 20px;
+   margin: 30px;
    gap: 20px;
 align-items: center;
 text-align: left;
-justify-content: space-evenly;
-}
-.phone-no{
-   margin-left: -283px;
-}
-.gmail{
-   margin-left:-77px ;
+justify-content: flex-start;
 }
 .phone-no i,.gmail i,.git i{
    color: red;
@@ -615,17 +609,9 @@ justify-content: space-evenly;
    text-shadow: 0 0 10px rgb(255, 17, 17),
    0 0 10px rgb(255, 63, 5);
  }
- .git{
-   position: relative;
-   margin-left: 20px;
- }
  .git a{
    text-decoration: none;
    color: white;
- }
- .fa-github{
-top: 4px;
-left: 0px;
  }
  .download{
    height: 50px;
@@ -670,14 +656,6 @@ left: 0px;
       background-size: cover;
       position: relative;
    }
-     .message-box,.phone-info{
-      width: 95vw;
-      margin-bottom: 30px;
-      height: fit-content;
-    } 
-    .message-box input,textarea{
-      width: 95%;
-    }
 }
 @media(max-width:920px){
    .About{
@@ -703,6 +681,14 @@ left: 0px;
       text-align: center;
       flex-direction: column;
    }
+   .message-box,.phone-info{
+      width: 95vw;
+      margin-bottom: 30px;
+      height: fit-content;
+    } 
+    .message-box input,textarea{
+      width: 95%;
+    }
    .heading{
       position: static;
       margin: 50px 0px;
@@ -719,12 +705,6 @@ left: 0px;
    }
    .image-card{
       height: 250px;
-   }
-   .phone-no i{
-      margin-left: 110px;
-   }
-   .gmail i{
-      margin-left:35px ;
    }
    footer p{
       font-size: 12px;
