@@ -203,8 +203,8 @@ transform: translateX(100px);
 }
 .image-card{
    height: 350px;
-   width: 25vw;
-   margin-left: 50px;
+   width: 20vw;
+   margin-left: 0px;
    background-image: url("images/myimage.jpg");
    background-size: cover;
 border-radius: 10px;
