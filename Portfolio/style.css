@@ -657,7 +657,7 @@ justify-content: flex-start;
       width: 100%;
       right: 0px;
       background-size: cover;
-      position:fixed;
+      position:relative;
    }
 }
 @media(max-width:920px){
