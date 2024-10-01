@@ -9,7 +9,7 @@ const navParts = document.querySelectorAll(".web-info .part");
 
  window.addEventListener('scroll',()=>{
 value = window.scrollY;
-backgroundImage.style.marginTop=value*2 + 'px';
+backgroundImage.style.marginTop=value*0.3 + 'px';
  });
 
 //adding animation to side-menu
