@@ -1,0 +1,278 @@
+*{
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+body{
+   display: grid;
+   place-content: center;
+   height: 100vh;
+   background-color: rgb(255, 255, 255);
+}
+.container{
+   height: 400px;
+   border-radius: 10px;
+   position: relative;
+   width: 310px;
+   background-color: rgb(255, 0, 0);
+   border: 1px solid black;
+  box-shadow: 0 0 10px red,0 0 10px red;
+   display: flex;
+   flex-direction: column;
+   align-items: normal;
+}
+.header{
+   background-color: rgb(0, 0, 0);
+   width: 100%;
+   height: 10%;
+   color: white;
+   border-top-left-radius: 10px;
+   border-top-right-radius: 10px;
+   position: relative;
+}
+.fa-caret-down,.fa-caret-up{
+   position: absolute;
+   top: 8px;
+   left: 15px;
+   font-size: 25px;
+}
+.header .fa-caret-up{
+   display: none;
+}
+.fa-list-ul{
+   position: absolute;
+   top: 10px;
+   right: 15px;
+   font-size: 20px;
+}
+.music-content{
+   background-color: rgb(255, 0, 0);
+   width: 100%;
+   height: 68%;
+}
+.buttons{
+   background-color: yellow;
+   width: 100%;
+   height: 20%;
+   border-bottom-left-radius: 10px;
+   border-bottom-right-radius:10px ;
+   position: relative;
+   margin-top: 8px;
+   display: grid;
+   place-content: center;
+}
+.fa-shuffle{
+   position: absolute;
+   top: 30px;
+   left: 10px;
+   font-size: 20px;
+}
+.loop{
+   position: absolute;
+   top: 30px;
+   right: 10px;
+   font-size: 20px;
+   color:red;
+}
+.play-button{
+   background-color:yellow;
+   height: 80px;
+   width: 200px;
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+}
+.a{
+   background-color: rgb(0, 0, 0);
+   height: 50px;
+   width: 50px;
+   border-radius: 50%;
+   color: white;
+   text-align: center;
+   line-height: 50px;
+   font-size: 25px;
+   cursor: pointer;
+}
+.play{
+   background-color: rgb(0, 0, 0);
+   color: white;
+   height: 70px;
+   width: 70px;
+   position: relative;
+   border-radius: 50%;
+   text-align: center;
+   line-height: 70px;
+   font-size: 40px;
+}
+.music{
+   background-color: rgb(255, 0, 0);
+   width: 300px;
+   height: 228px;
+   display: grid;
+   place-content: center;
+}
+.image{
+   border-radius: 5px;
+   background-image: url("music2.jpg");
+   background-size: cover;
+   background-position: center;
+   background-color: chocolate;
+   height: 200px;
+   width: 250px;
+}
+.time{
+   background-color: rgb(255, 0, 0);
+   width: 300px;
+   height:58px;
+   display: grid;
+   place-content: center;
+   margin-top: -7px;
+}
+.para{
+   width: 250px;
+   display: flex;
+   justify-content: space-between;
+}
+.para p{
+   font-size: 12px;
+   font-weight: 600;
+   color: white;
+}
+.progress-bar{
+   width: 252px;
+   height: 5px;
+   border-radius: 8px;
+   background-color: azure;
+   margin-top: 5px;
+   position: relative;
+}
+.name{
+width: 200px;
+}
+.name h3{
+   color: white;
+
+}
+.name h3 p{
+   font-size: 10px;
+}
+.inside{
+   position: relative;
+   height: 100%;
+   width: 0%;
+   border-radius: inherit;
+   background-color: black;
+   top:0px;
+   left: 0px;
+}
+
+.circle{
+   position: absolute;
+   height: 10px;
+   width: 10px;
+   border-radius: inherit;
+   background-color: rgb(255, 255, 255);
+   top:-3px;
+   left: 0px;
+}
+.play .fa-stop{
+  position: absolute;
+  right:20px ;
+  top: 14px;
+  cursor: pointer;
+}
+.play .fa-play{
+   position: absolute;
+   right:18px ;
+   top: 14px;
+   cursor: pointer;
+ }
+.red{
+   color:red
+}
+.music-list{
+   background-color: rgb(0, 0, 0);
+   width: 100%;
+   border-radius: inherit;
+   position: absolute;
+   bottom: 0px;
+   z-index: 100;
+   height: 320px;
+   display: none;
+   transition: all 0.3s ease-in;
+}
+.visible{
+   display:block;
+}
+.music-list ul li{
+   height: 70px;
+   background-color: red;
+   margin: 10px;
+   border-radius: 10px;
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   color: white;
+}
+.music-list  h1{
+align-items: center;
+text-align: center;
+margin: 15px 20px;
+color: white;
+}
+.music-list ul li img{
+   height: 60px;
+   width: 70px;
+   margin-left: 10px;
+   border-radius: 5px;
+}
+.info{
+   margin-right: 70px;
+}
+.fa-solid{
+   cursor: pointer;
+}
+.artist{
+   font-size: 20px;
+   font-weight: 500;
+}
+.duration{
+   font-size: 17px;
+   color: rgb(56, 53, 53);
+}
+.fa-xmark{
+   margin-left: 100px;
+}
+.about{
+   position: absolute;
+   background-color: white;
+   border-radius: inherit;
+   height: 50%;
+   top: 100px;
+   z-index: 100;
+   border: 2px solid rgb(179, 179, 179);
+   visibility: hidden;
+   transition: all 0.1s ease-in-out;
+}
+.about h1{
+   text-align: center;
+   margin: 10px;
+}
+.about p{
+   font-size: 18px;
+   padding: 5px;
+}
+.bg{
+   z-index:50;
+   position: absolute;
+border-bottom-left-radius: inherit;
+border-bottom-right-radius: inherit;
+   height: 90%;
+   bottom: 0px;
+   width: 100%; 
+    background-color: rgb(113, 113, 113,0.5);
+    display: none;
+}
+.contain{
+   color: black;
+}

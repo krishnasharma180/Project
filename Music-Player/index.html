@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Music-player</title>
+</head>
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"/>
+<body>
+
+   <div class="container">
+      <div class="bg"></div>
+
+      <!-- Header containing list and info buttons -->
+
+      <div class="header">
+         <i class="fa-solid fa-caret-down"></i>
+         <i class="fa-solid fa-caret-up"></i>
+         <i class="fa-solid fa-list-ul"></i>
+      </div>
+      <!-- About info of Project -->
+
+      <div class="about">
+         <h1>Music-Player</h1>
+         <p>This is a Music-player that might give you some nostalgia there are few BG musics of a cartoon name Shinchan 
+            enjoy....
+         </p>
+      </div>
+
+<!-- List items icon -->
+
+      <div class="music-list">
+         <h1>Music-list<i class="fa-solid fa-xmark"></i></h1>
+         <!-- <i class="fa-solid fa-xmark"></i> -->
+         <ul>
+         
+            <li id="0">
+               <img src="images/image1.jpg"/>
+               <div class="info">
+               <div class="artist">Shinchan1</div>
+               <div class="duration">0:30</div>
+            </div>
+            </li>
+            <li id="1">
+               <img src="images/image2.jpg"/>
+               <div class="info">
+                  <div class="artist">Shinchan2</div>
+                  <div class="duration">0:30</div>
+               </div>
+            </li>
+            <li id="2">  
+               <img src="images/image3.jpg"/>
+               <div class="info">
+                  <div class="artist">Shinchan3</div>
+                  <div class="duration">0:28</div>
+               </div>
+            </li>
+         </ul>
+      </div>
+
+<!-- Contains Image Time Name ProgressBar -->
+
+      <div class="music-content">
+         <div class="music">
+            <div class="image"></div>
+         </div>
+         <div class="time">
+            <div class="name">
+               <h3>Shinchan <p>Theme song</p></h3>
+            </div>
+            <div class="progress-bar">
+               <div class="inside"></div>
+               <div class="circle"></div>
+            </div>
+            <div class="para">
+               <p class="start">0:<span>00</span></p>
+               <p class="end">0:30</p>
+            </div>
+            <audio class="audio" src=""></audio>
+         </div>
+      </div>
+
+<!-- Buttons contains forwaard,backward and play -->
+
+      <div class="buttons">
+         <i class="fa-solid fa-shuffle"></i>
+         <i class="fa-solid fa-person-walking-arrow-loop-left loop contain"></i>
+         <div class="play-button">
+            <div class="backward a">
+               <i class="fa-solid fa-backward-step"></i>
+            </div>
+            <div class="play">
+               <div class="pause"></div>
+               <i class="fa-solid fa-play"></i>
+            </div>
+            <div class="forward a">
+               <i class="fa-solid fa-forward-step"></i>
+            </div>
+         </div>
+      </div>
+   </div>
+   <script src="app.js"></script>
+</body>
+</html>
