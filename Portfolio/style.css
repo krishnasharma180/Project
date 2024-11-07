@@ -205,7 +205,7 @@ transform: translateX(100px);
    height: 350px;
    width: 20vw;
    margin-left: 0px;
-   background-image: url("images/myimage.jpg");
+   background-image: url("images/yimage.jpg");
    background-size: cover;
    box-shadow: 0 0 20px rgb(119, 116, 116),0 0 20px rgb(98, 98, 98);
 border-radius: 10px;
